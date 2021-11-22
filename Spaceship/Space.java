@@ -36,5 +36,24 @@ public class Space extends World
         addObject(asteroid3,496,316);
         Asteroid asteroid4 = new Asteroid();
         addObject(asteroid4,511,49);
+        Counter counter = new Counter();
+        addObject(counter,29,22);
+        counter.setLocation(30,27);
+        Counter counter2 = new Counter();
+        addObject(counter2,90,72);
+        counter2.setLocation(43,14);
+        Counter counter3 = new Counter();
+        addObject(counter3,119,123);
+        counter3.setLocation(42,22);
+        counter.addScore();
+        counter.update();
+        counter3.addScore();
+        counter.setLocation(38,12);
+        counter2.update();
+        counter3.update();
+        counter3.addScore();
+        counter3.update();
+        counter3.update();
+        counter3.addScore();
     }
 }
