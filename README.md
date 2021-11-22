@@ -11,6 +11,6 @@ Hassain
 - add 3 backgrounds
 
 <hr>
-Spiro
+Spyro
 
-- idkk
+- typing mechanic
