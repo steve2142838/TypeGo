@@ -1,2 +1,15 @@
 # TypeGo
-Final project testing 1 by steve nguyen
+
+<hr>
+Steve
+- do rocket
+
+<hr>
+Hassain
+
+- add 3 backgrounds
+
+<hr>
+Spiro
+
+- idk
