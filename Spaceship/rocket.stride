@@ -14,7 +14,7 @@
             <params/>
             <throws/>
             <body>
-                <call expression="move(-500)" expression-java="move(-500)" enable="true"/>
+                <call expression="move(-50)" expression-java="move(-50)" enable="true"/>
                 <comment xml:space="preserve">Add your action code here.</comment>
             </body>
         </method>

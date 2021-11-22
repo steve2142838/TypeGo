@@ -15,7 +15,7 @@ public class rocket extends Actor
      */
     public void act()
     {
-        move(-500);
+        move(-50);
         /* Add your action code here.*/
     }
 }
