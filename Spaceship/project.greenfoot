@@ -1,7 +1,7 @@
 #Greenfoot project file
 class.Asteroid.image=rock.png
 class.Space.image=space1.jpg
-class.rocket.image=rocket.png
+class.rocket.image=space-ship.gif
 dependency1.from=Space
 dependency1.to=rocket
 dependency1.type=UsesDependency
