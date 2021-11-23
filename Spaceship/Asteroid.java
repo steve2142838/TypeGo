@@ -9,7 +9,7 @@ import java.util.*;
 public class Asteroid extends SmoothMover
 {
     private static final double SCALE_FACTOR = 1.4;
-    private static final double DX = .3;
+    private static final double DX = .75;
     
     private String asteroidWord;
     private Label label;
