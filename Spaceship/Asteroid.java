@@ -30,32 +30,7 @@ public class Asteroid extends SmoothMover
     public void act()
     {
         move(-DX);
-        checkProjectile();
-        updateLabels();
     }
-    
-    private void checkProjectile() {
-        if (isTouching(Projectile.class)) {
-            //List<String> asteroidsList = ((Jupiter)getWorld()).getAsteroidsList();
-            String word = ((Jupiter)getWorld()).asteroidWord;
-            int idx = word.indexOf(asteroidWord);
-            
-            //update word
-            asteroidWord = asteroidWord.substring(1);
-            ((Jupiter)getWorld()).asteroidWord = asteroidWord;
-            removeTouching(Projectile.class);
-        }
-    }
-    
-    private void updateLabels() {
-        //remove old label
-        removeTouching(Label.class);
-        
-        //update new label location
-        Label label = new Label(asteroidWord, 26);
-        getWorld().addObject(label, (int)getExactX(), (int)getExactY());
-    }
-    
     
     
     

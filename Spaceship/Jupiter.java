@@ -15,22 +15,34 @@ public class Jupiter extends World
     private int currentLvl = 1;
     private Counter counter;
     private List<String> asteroidsList;
-    
-    public String asteroidWord = "functional";
-    
-    public Jupiter()
+       
+    public Jupiter(String difficulty)
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(WIDTH, HEIGHT, 1); 
         scaleBG();
         prepare();
         
-        createAsteroids(asteroidWord);
+        showText("Difficulty: " + difficulty, 100, 300);
+        
+        switch (difficulty) {
+            case Difficulties.EASY: 
+                //playEasyMode();
+                break;
+            case Difficulties.MEDIUM:
+                //playMediumMode();
+                break;
+            case Difficulties.HARD:
+                //playHardMode();
+                break;
+            default:
+                Greenfoot.setWorld(new TitleMenu());
+        }
+        
     }
 
     public void act() {
         updateFrames();
-        //startGame();
+
     }
     
     private void scaleBG() {
@@ -55,42 +67,13 @@ public class Jupiter extends World
         frames++;
     }
     
-    private void startGame() {
-        //if (asteroidsList == null || asteroidsList.size() == 0)
-        if (asteroidsList == null) {
-            asteroidsList = Arrays.asList(Levels.getLevel(currentLvl++));
-            Collections.shuffle(asteroidsList);
-            createAsteroids(asteroidsList);
-        }
-    }
-    
-    private void createAsteroids(String word) {
-            int x = getRandom(WIDTH - 60, WIDTH - 20);
-            int y = HEIGHT / 2;
-            addObject(new Asteroid(word), x, y);
-        
-    }
-    
-    private void createAsteroids(List<String> asteroidsList) {
-        for (String asteroidWord : asteroidsList) {
-            int x = getRandom(WIDTH - 60, WIDTH - 20);
-            //int y = getRandom(40, HEIGHT - 40);
-            int y = HEIGHT / 2;
-            
-            addObject(new Asteroid(asteroidWord), x, y);
-        }
-    }
-    
     public int getRandom(int min, int max) {
         return Greenfoot.getRandomNumber(max - min + 1) + min;
     }
     
-    
     public void winner() {
-        
         showText("WINNER", WIDTH / 2, HEIGHT / 2);
         Greenfoot.stop();
-        
     }
     
     public int getFrames() {

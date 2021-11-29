@@ -33,11 +33,11 @@ public class Spaceship extends SmoothMover
     {
         getFrames();
         updateImage();
-        playGame();
+        
     }
     
     private void getFrames() {
-        frames = ((Jupiter)getWorld()).getFrames();
+        setFrames(((Jupiter)getWorld()).getFrames());
     }
     
     private void updateImage() {
@@ -47,39 +47,9 @@ public class Spaceship extends SmoothMover
         }
     }
     
-    private void playGame() {
-        //check for keypress
-        checkKeys();
-        
-        
+    public void setFrames(int frames) {
+        this.frames = frames;
     }
-    
-    private void checkKeys() {
-        String word = ((Jupiter)getWorld()).asteroidWord;
-        
-        if (word.isEmpty() || word == null) {
-          ((Jupiter)getWorld()).winner();  
-          return;
-        }
-        
-        if (word.substring(0,1).equals(Greenfoot.getKey())) {
-            getWorld().addObject(new Projectile(), (int)getExactX(), (int)getExactY()); 
-        }
-        
-        /*
-        for (int i = 0; i < asteroidsList.size(); i++) {
-            String word = asteroidsList.get(i);
-            if (word.substring(0,1).equals(Greenfoot.getKey())) {
-                asteroidsList.add(i, word.substring(1));
-                getWorld().addObject(new Projectile(), (int)getExactX(), (int)getExactY());    
-            }
-        }
-        */
-       
-       
-        
-    }
-    
     
     
     
