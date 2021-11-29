@@ -26,10 +26,15 @@ public class Asteroid extends SmoothMover
         this.asteroidWord = asteroidWord;
     }
     
+    public Asteroid ()
+    {
+        
+    }
     
     public void act()
     {
         move(-DX);
+        moveAsteroid();
     }
     
     

@@ -74,4 +74,14 @@ public abstract class SmoothMover extends Actor
     {
         return exactY;
     }
+    
+    /**
+     * 
+     */
+    public void moveAsteroid()
+    {
+        setLocation(getX()-1,getY());
+    }
 }
+
+

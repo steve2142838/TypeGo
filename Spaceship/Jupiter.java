@@ -15,7 +15,7 @@ public class Jupiter extends World
     private int currentLvl = 1;
     private Counter counter;
     private List<String> asteroidsList;
-       
+    int asteroidCount = 1;
     public Jupiter(String difficulty)
     {    
         super(WIDTH, HEIGHT, 1); 
@@ -42,7 +42,15 @@ public class Jupiter extends World
 
     public void act() {
         updateFrames();
-
+        if (asteroidCount<10)
+        {
+            addAsteroid();
+        }
+    }
+    
+    public void addAsteroid()
+    {
+        addObject(new Asteroid(), 750,Greenfoot.getRandomNumber(450));
     }
     
     private void scaleBG() {
