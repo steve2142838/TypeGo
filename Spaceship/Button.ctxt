@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Button
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Button\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Button()
+comment2.params=
+comment2.target=void\ checkHover()
+comment3.params=world
+comment3.target=void\ checkClicked(greenfoot.World)
+comment4.params=transparency
+comment4.target=void\ addHoverEffect(int)
+comment5.params=img
+comment5.target=greenfoot.GreenfootImage\ scaleDown(greenfoot.GreenfootImage)
+comment6.params=
+comment6.target=boolean\ getIsMouseHover()
+comment7.params=isMouseHover
+comment7.target=void\ setIsMouseHover(boolean)
+comment8.params=
+comment8.target=boolean\ getIsPlayHover()
+comment9.params=isPlayHover
+comment9.target=void\ setIsPlayHover(boolean)
+numComments=10

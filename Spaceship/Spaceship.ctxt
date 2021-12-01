@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=Spaceship
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Spaceship\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Spaceship()
+comment10.params=isKeyDown
+comment10.target=void\ setIsKeyDown(boolean)
+comment11.params=currentLetter
+comment11.target=void\ setCurrentLetter(java.lang.String)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ getLatestFrames()
+comment4.params=
+comment4.target=void\ checkShooting()
+comment5.params=asteroidLetter
+comment5.target=boolean\ rightLetterTyped(java.lang.String)
+comment6.params=
+comment6.target=void\ updateImage()
+comment7.params=
+comment7.target=int\ getFrames()
+comment8.params=frames
+comment8.target=void\ setFrames(int)
+comment9.params=
+comment9.target=boolean\ getIsKeyDown()
+numComments=12

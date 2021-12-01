@@ -1,0 +1,29 @@
+#BlueJ class context
+comment0.target=Counter
+comment0.text=\n\ A\ Counter\ class\ that\ allows\ you\ to\ display\ a\ numerical\ value\ on\ screen.\n\ \n\ The\ Counter\ is\ an\ actor,\ so\ you\ will\ need\ to\ create\ it,\ and\ then\ add\ it\ to\n\ the\ world\ in\ Greenfoot.\ \ If\ you\ keep\ a\ reference\ to\ the\ Counter\ then\ you\n\ can\ adjust\ its\ value.\ \ Here's\ an\ example\ of\ a\ world\ class\ that\n\ displays\ a\ counter\ with\ the\ number\ of\ act\ cycles\ that\ have\ occurred\:\n\ \n\ <pre>\n\ class\ CountingWorld\n\ {\n\ \ \ \ \ private\ Counter\ actCounter;\n\ \ \ \ \ \n\ \ \ \ \ public\ CountingWorld()\n\ \ \ \ \ {\n\ \ \ \ \ \ \ \ \ super(600,\ 400,\ 1);\n\ \ \ \ \ \ \ \ \ actCounter\ \=\ new\ Counter("Act\ Cycles\:\ ");\n\ \ \ \ \ \ \ \ \ addObject(actCounter,\ 100,\ 100);\n\ \ \ \ \ }\n\ \ \ \ \ \n\ \ \ \ \ public\ void\ act()\n\ \ \ \ \ {\n\ \ \ \ \ \ \ \ \ actCounter.setValue(actCounter.getValue()\ +\ 1);\n\ \ \ \ \ }\n\ }\n\ </pre>\n\ \n\ @author\ Neil\ Brown\ and\ Michael\ K\u00F6lling\ \n\ @version\ 1.0\n
+comment1.params=
+comment1.target=Counter()
+comment2.params=prefix
+comment2.target=Counter(java.lang.String)
+comment2.text=\n\ Create\ a\ new\ counter,\ initialised\ to\ 0.\n
+comment3.params=
+comment3.target=void\ act()
+comment3.text=\n\ Animate\ the\ display\ to\ count\ up\ (or\ down)\ to\ the\ current\ target\ value.\n
+comment4.params=
+comment4.target=void\ increment()
+comment5.params=score
+comment5.target=void\ add(int)
+comment5.text=\n\ Add\ a\ new\ score\ to\ the\ current\ counter\ value.\ \ This\ will\ animate\n\ the\ counter\ over\ consecutive\ frames\ until\ it\ reaches\ the\ new\ value.\n
+comment6.params=
+comment6.target=int\ getValue()
+comment6.text=\n\ Return\ the\ current\ counter\ value.\n
+comment7.params=newValue
+comment7.target=void\ setValue(int)
+comment7.text=\n\ Set\ a\ new\ counter\ value.\ \ This\ will\ not\ animate\ the\ counter.\n
+comment8.params=prefix
+comment8.target=void\ setPrefix(java.lang.String)
+comment8.text=\n\ Sets\ a\ text\ prefix\ that\ should\ be\ displayed\ before\n\ the\ counter\ value\ (e.g.\ "Score\:\ ").\n
+comment9.params=
+comment9.target=void\ updateImage()
+comment9.text=\n\ Update\ the\ image\ on\ screen\ to\ show\ the\ current\ value.\n
+numComments=10
