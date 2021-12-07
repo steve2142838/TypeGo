@@ -9,6 +9,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Title extends Button
 {
     public Title() {
-        setImage(scaleDown(getImage(), 1.2));
+        setImage(scaleDown(getImage(), 1));
     }
 }
