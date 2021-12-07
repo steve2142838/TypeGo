@@ -9,7 +9,7 @@ import java.util.*;
 public class Spaceship extends SmoothMover
 {
     private final GifImage bg = new GifImage("space-ship.gif");
-    private final double SCALE_FACTOR = .6;
+    private final double SCALE_FACTOR = .7;
     
     private int frames;
     private String currentLetter;

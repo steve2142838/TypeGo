@@ -18,7 +18,6 @@ public class Jupiter extends World
     private List<String> asteroids = new ArrayList<>();
     private int asteroidIdx = 0;
     
-    
     private Counter counter, timer;
 
     /**
@@ -27,26 +26,26 @@ public class Jupiter extends World
     public Jupiter(String difficulty)
     {
         super(WIDTH, HEIGHT, 1);
-        scaleBG();
+        setBG();
         prepare();
         
         this.difficulty = difficulty;
         
         switch (difficulty) {
             case Difficulties.EASY : {
-                asteroids = Arrays.asList(Levels.getEasy());
+                asteroids = Arrays.asList(Levels.getWords());
                 asteroidSpawnRate = 135;
                 break;
             }
             case Difficulties.MEDIUM : {
-                asteroids = Arrays.asList(Levels.getEasy());
+                asteroids = Arrays.asList(Levels.getWords());
                 asteroidSpawnRate = 105;
                 //asteroids = Arrays.asList(Levels.getMedium());
                 break;
             }
             case Difficulties.HARD : {
                 asteroidSpawnRate = 85;
-                asteroids = Arrays.asList(Levels.getEasy());
+                asteroids = Arrays.asList(Levels.getWords());
                 //asteroids = Arrays.asList(Levels.getHard());
                 break;
             }
@@ -95,12 +94,23 @@ public class Jupiter extends World
         }
     }
 
-    private void scaleBG()
+    private void setBG()
     {
-        /* scale image */
-        GreenfootImage bg = getBackground();
-        bg.scale(bg.getWidth(), (int)(bg.getHeight() * 1.63));
-        /* set image */
+        // get a background
+        int bgIdx = getRandom(1, 3);
+        GreenfootImage bg = new GreenfootImage("jupiter-" + bgIdx + ".jpg");
+        
+        // scale image
+        switch (bgIdx) {
+            case 3:
+                bg.scale((int)(bg.getWidth() * 1.2), (int)(bg.getHeight() * 1.63));
+                break;
+            default:
+                bg.scale(bg.getWidth(), (int)(bg.getHeight() * 1.63));
+        }
+        
+        
+        // set image
         setBackground(bg);
     }
 
@@ -110,7 +120,7 @@ public class Jupiter extends World
         addObject(counter, 60, 33);
         
         Spaceship spaceship =  new  Spaceship();
-        addObject(spaceship, 25, HEIGHT / 2);
+        addObject(spaceship, 40, HEIGHT / 2);
         
         timer = new Counter("Timer: ");
         addObject(timer, getWidth() - 65, 33);

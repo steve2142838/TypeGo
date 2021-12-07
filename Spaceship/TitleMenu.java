@@ -31,6 +31,7 @@ public class TitleMenu extends World
 
         prepare();
     }
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -38,15 +39,19 @@ public class TitleMenu extends World
     private void prepare()
     {
         int mid = getWidth() / 2 + 18;
+
+        Title title = new Title();
+        addObject(title,mid,95);
         
         Play play = new Play();
         addObject(play, mid, 220);
-        
+
         Instructions instructions = new Instructions();
         addObject(instructions, mid, 305);
-        
+
         Credits credits = new Credits();
         addObject(credits, mid, 390);
+        
     }
     
     public void started() {

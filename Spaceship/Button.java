@@ -15,7 +15,7 @@ abstract public class Button extends Actor
     private boolean isPlayHover = true;
     
     public Button() {
-        setImage(scaleDown(getImage()));
+        setImage(scaleDown(getImage(), MENU_SCALE_FACTOR));
     }
     
     public void checkHover() {
@@ -50,9 +50,9 @@ abstract public class Button extends Actor
         setImage(img);
     }
     
-    public GreenfootImage scaleDown(GreenfootImage img) {
-        int wid = (int)(img.getWidth() * MENU_SCALE_FACTOR);
-        int hei = (int)(img.getHeight() * MENU_SCALE_FACTOR);
+    public GreenfootImage scaleDown(GreenfootImage img, double scale) {
+        int wid = (int)(img.getWidth() * scale);
+        int hei = (int)(img.getHeight() * scale);
         img.scale(wid, hei);
         
         return img;
