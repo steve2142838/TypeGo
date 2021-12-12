@@ -9,6 +9,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Winner extends EndScreen
 {
     public Winner() {
-        super("Winner");
+        super("You Won");
     }
 }

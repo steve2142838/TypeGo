@@ -21,8 +21,8 @@ public class InstructionsWorld extends World
         
         showText("Instructions", WIDTH / 2, HEIGHT / 2 - 120);
         String instructions = String.format("%s\n", "1- Pick a difficulty");
-        instructions += String.format("%s\n", "2- Type the words you see on the asteroid");
-        instructions += String.format("%s\n", "3- Try lasting as long as possible");
+        instructions += String.format("%s\n", "2- Type the words you see on the asteroids");
+        instructions += String.format("%s\n", "3- Try to win by typing all the words");
         showText(instructions, WIDTH / 2, HEIGHT / 2 + 40);
         
         //back button
