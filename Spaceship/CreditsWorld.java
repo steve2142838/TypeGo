@@ -21,7 +21,7 @@ private static final int WIDTH = 750;
         
         showText("Credits", WIDTH / 2, HEIGHT / 2 - 120);
         String instructions = String.format("%s\n", "Steve Nguyen");
-        instructions += String.format("%s\n", "hassain amin");
+        instructions += String.format("%s\n", "Hussain Amin");
         instructions += String.format("%s\n", "sypro goumas");
         showText(instructions, WIDTH / 2, HEIGHT / 2 + 40);
         
