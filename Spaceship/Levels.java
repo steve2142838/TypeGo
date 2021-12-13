@@ -10,7 +10,9 @@ public class Levels
     //private static String[] level1 = {"fell" , "empirical", "damn", "favorable", "functional", "a" , "e", "e", "t"};
     private static String[] words = {
         "pure", "land", "no", "bitter", "stitch", "advance", "gesture", "habit", "tycoon", "chip", "girl", "offend", "peel", "throw", "sheep", "fame", 
-        "bloody", "seem", "suitcase", "school", "harass", "supply", "infect", "give", "soup", "grudge", "want", "left", "father", "goal",
+        "bloody", "seem", "suitcase", "school", "harass", "supply", "infect", "give", "soup", "grudge", "want", "left", "father", "goal", "bike",
+        "back", "bundle", "practise", "quote", "arch", "pile", "ball", "stick", "vaccum", "brand", "bishop", "depend", "depend", "berry", "produce", "cane", "chest", 
+        "stubborn", "native", "slice", "total", "manner", "pay", "congress", "bet", "space", "laser", "solve", "jury", "minute", "matter",
        
     };
     
