@@ -19,11 +19,13 @@ private static final int WIDTH = 750;
         super(WIDTH, HEIGHT, 1); 
         scaleDownImage();
         
-        showText("Credits", WIDTH / 2, HEIGHT / 2 - 120);
-        String instructions = String.format("%s\n", "Steve Nguyen");
-        instructions += String.format("%s\n", "Hussain Amin");
-        instructions += String.format("%s\n", "sypro goumas");
+        showText("Credits\n-Steve Nguyen\n-Hussain Amin\n-sypro goumas", WIDTH / 2, HEIGHT / 2 - 90);
+        
+        String instructions = String.format("%s", "=> Images obtained from rossnorton.com\n=> Sound effects obtained from freesounds.com");
+        
         showText(instructions, WIDTH / 2, HEIGHT / 2 + 40);
+        showText(String.format("\n\n\n%s\n", "This work is licensed under\nthe MIT LICENSE"), WIDTH - 135, HEIGHT - 70);
+        
         
         //back button
         addObject(new Back(), 110, 50);
