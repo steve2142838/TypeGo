@@ -14,7 +14,7 @@ public class Spaceship extends SmoothMover
     private int frames;
     private String currentLetter;
     private boolean isKeyDown = false;
-    
+    private SimpleTimer timer = new SimpleTimer();
     
     
     public Spaceship() {
@@ -28,6 +28,9 @@ public class Spaceship extends SmoothMover
         
         // rotate img
         setRotation(90);
+        
+        // projectile delay
+        timer.mark();
     }
     
     public void act()
@@ -39,7 +42,6 @@ public class Spaceship extends SmoothMover
         
         
         //END game-related-stuff
-        
         updateImage();
         
     }
@@ -53,13 +55,14 @@ public class Spaceship extends SmoothMover
         if (!asteroids.isEmpty()) {
             Asteroid asteroid = asteroids.get(0);
             
-            if (rightLetterTyped(asteroid.getLetter())) {
+            if (timer.millisElapsed() > 555 && rightLetterTyped(asteroid.getLetter())) {
                 if (!isKeyDown) {
                     // shoot projectile
                     Projectile p = new Projectile((int)asteroid.getExactX(), (int)asteroid.getExactY());
                     
                     getWorld().addObject(p, (int)getExactX() + 85, (int)getExactY());    
                     setIsKeyDown(true);
+                    timer.mark();
                 }
             }
         } 

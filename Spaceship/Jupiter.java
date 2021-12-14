@@ -34,17 +34,17 @@ public class Jupiter extends World
         switch (difficulty) {
             case Difficulties.EASY : {
                 asteroids = Arrays.asList(Levels.getWords());
-                asteroidSpawnRate = 135;
+                asteroidSpawnRate = 175;
                 break;
             }
             case Difficulties.MEDIUM : {
                 asteroids = Arrays.asList(Levels.getWords());
-                asteroidSpawnRate = 105;
+                asteroidSpawnRate = 150;
                 //asteroids = Arrays.asList(Levels.getMedium());
                 break;
             }
             case Difficulties.HARD : {
-                asteroidSpawnRate = 85;
+                asteroidSpawnRate = 120;
                 asteroids = Arrays.asList(Levels.getWords());
                 //asteroids = Arrays.asList(Levels.getHard());
                 break;

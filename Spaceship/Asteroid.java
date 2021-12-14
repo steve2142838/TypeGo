@@ -55,19 +55,15 @@ public class Asteroid extends SmoothMover
     private void setAsteroidSpeed(String difficulty) {
         switch (difficulty) {
             case Difficulties.EASY : {
-                this.DX = .65;
+                this.DX = .5;
                 break;
             }
             case Difficulties.MEDIUM : {
+                this.DX = .85;
+                break;
+            }
+            default: {
                 this.DX = 1.25;
-                break;
-            }
-            case Difficulties.HARD : {
-                this.DX = 1.75;
-                break;
-            }
-            default : {
-                this.DX = .65;
             }
         }
         

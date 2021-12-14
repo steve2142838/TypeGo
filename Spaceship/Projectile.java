@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Projectile extends SmoothMover
 {
     private final double SCALE_FACTOR = .35;
-    private final double DX= 13;
+    private final double DX= 11.5;
     
     private int x;
     private int y;
